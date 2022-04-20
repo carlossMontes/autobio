@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Autobiografia</title>
+</head>
+
+<body>
+    <script src="../js/app.js"></script>
+    <div class="cabecera">
+        <h1>Carlos Montes</h1>
+        <h2>Web Components</h2>
+    </div>
+    <div class="cuerpo">
+        <div class="menu">
+            <ul class="list__Menu">
+                <li class="list__Item" id="bio"><a href="index.html">Biografia</a></li>
+                <li class="list__Item" id="tec1" style="background-color: chartreuse; border: 1px solid black;"><a
+                        href="tec1.html" style="color: black;">Web Components</a></li>
+                <li class="list__Item" id="tec2"><a href="tec2.html">Deno</a></li>
+                <li class="list__Item" id="tec3"><a href="tec3.html">Flutter</a></li>
+            </ul>
+        </div>
+        <img src="../img/wc.png" class="img_centrada">
+        <div class="parrafo">
+            <p>Como desarrollador, la mayor parte del tiempo buscamos como poder reutilizar código. Como sabemos, no es
+                una tarea
+                sencilla y aún menos para aquellas estructuras que utilizan lenguajes de marcado en proyectos
+                personalizados.</p>
+            <p>Claros son
+                los ejemplos de páginas web con uso de elementos HTML, dónde se busca utilizar una plantilla que siempre
+                en este tipo de
+                proyectos sufre modificaciones para cumplir con los requerimientos de <b>Interfaz de Usuario</b>. En
+                caso de que sean
+                utilizado multiples veces en un proyecto y con un mal uso, puede hacer que el sitio web luzca como un
+                verdadero
+                desastre.</p>
+            <p>Los Componentes Web apuntan a resolver dichos problemas, consisten en <b>tres tecnologías</b>
+                principalmente, las que se
+                pueden usar juntas para crear elementos personalizables versátiles que encapsulan la funcionalidad y
+                pueda ser
+                reutilizada donde sea sin miedo a colisiones de código.</p>
+            <ul class="lista">
+                <li>
+                    <p><b>Custom elements</b> (elementos personalizados): Un conjunto de APIs de JavaScript que permiten
+                        definir
+                        elementos
+                        personalizados y su comportamiento, que entonces puede ser utilizado como se deseé en la
+                        interfaz
+                        del usuario.
+                    </p>
+                </li>
+                <li>
+                    <p><b>Shadow DOM:</b> Un conjunto de APIs de JavaScript para fijar un árbol DOM "sombra" encapsulado
+                        a un
+                        elemento — que es
+                        renderizado por separado del documento DOM principal — y controlando funcionalidad asociada. De
+                        esta forma, se pueden
+                        mantener características de un elemento en privado, así puede tener el estilo y los scripts sin
+                        miedo de colisiones con
+                        otras partes del documento.
+                    </p>
+                </li>
+                <li>
+                    <p><b>HTML templates</b> (plantillas HTML): Los elementos <b><code>&lt;template&gt;</code></b> y
+                        <b><code>&lt;slot&gt;</code></b> permiten escribir
+                        plantillas de marcado que
+                        no son desplegadas en la página renderizada. Éstas pueden ser reutilizadas en múltiples
+                        ocasiones
+                        como base de la
+                        estructura de un elemento personalizado.
+                    </p>
+                </li>
+            </ul>
+            <a href="https://developer.mozilla.org/es/docs/Web/Web_Components">
+                <p class="enlace">La información de Web Components se puede consultar en este enlace</p>
+            </a>
+        </div>
+    </div>
+    <footer class="pie">
+        <p>Creado por Carlos Montes. Enero 2021. Derechos casi reservados.</p>
+    </footer>
+</body>
+
+</html>
